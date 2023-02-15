@@ -1,1 +1,6 @@
 
+user:
+  name: bike
+  pass: $2a$10$NxBLNbAlzlU.V1C8RjIaeurOfUX6zJNTXi1LhdBiT6UwCTMp0Inw2
+
+jwt.secret: patatas.de.colores

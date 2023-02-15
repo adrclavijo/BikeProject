@@ -1,5 +1,6 @@
 package es.aclavijo.bikeapp.bike.model;
 
+import es.aclavijo.bikeapp.items.model.Items;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
