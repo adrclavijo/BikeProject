@@ -1,12 +1,15 @@
 package es.aclavijo.bikeapp.bike;
 
 import es.aclavijo.bikeapp.bike.dto.BikeDto;
+import es.aclavijo.bikeapp.bike.dto.BikeRequestDto;
+import es.aclavijo.bikeapp.bike.dto.BikeSearchResultDto;
 import es.aclavijo.bikeapp.items.dto.ItemsDto;
 import es.aclavijo.bikeapp.bike.model.Bike;
 import es.aclavijo.bikeapp.items.model.Items;
 import lombok.experimental.UtilityClass;
 
 import java.util.LinkedList;
+import java.util.List;
 
 @UtilityClass
 public class BikeMapper {
@@ -50,5 +53,13 @@ public class BikeMapper {
                 item.getDescription(),
                 null
         );
+    }
+
+    public static BikeSearchResultDto searchResultFromDataAndRequest(List<BikeDto> bikeList, BikeRequestDto request) {
+        return new BikeSearchResultDto(bikeList,
+                request.getPage(),
+                request.getSize(),
+                request.getSearchString(),
+                request.getOrder());
     }
 }
