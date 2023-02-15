@@ -2,6 +2,7 @@ package es.aclavijo.bikeapp.config;
 
 import static java.time.Instant.now;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -11,7 +12,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.time.Instant;
 
 @RequiredArgsConstructor
-@Setter
+@Data
 public class ExceptionResponse {
 
     @NonNull

@@ -20,3 +20,5 @@ services:
     environment:
       - POSTGRES_USER=bike
       - POSTGRES_PASSWORD=b1k3P4ss!.
+    ports:
+      - "5432:5432"      

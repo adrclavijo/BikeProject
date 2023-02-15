@@ -36,7 +36,7 @@ public class Bike {
     @Column(length = 50)
     private String manufacturer;
 
-    @OneToMany
+    @OneToMany(mappedBy = "bike")
     private List<Items> items;
 
 }
