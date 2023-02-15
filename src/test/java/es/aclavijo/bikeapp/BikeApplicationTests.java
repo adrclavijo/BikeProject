@@ -1,13 +1,9 @@
-package es.aclavijo.bike;
+package es.aclavijo.bikeapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class BikeApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
 
 }

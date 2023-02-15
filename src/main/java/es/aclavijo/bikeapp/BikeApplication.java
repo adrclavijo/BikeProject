@@ -1,4 +1,4 @@
-package es.aclavijo.bike;
+package es.aclavijo.bikeapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
