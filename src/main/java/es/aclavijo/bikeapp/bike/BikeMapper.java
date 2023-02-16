@@ -27,7 +27,7 @@ public class BikeMapper {
 
     public static Bike bikeDtoToModel(BikeDto bike) {
         return new Bike(
-                bike.getId(),
+                null,
                 bike.getName(),
                 bike.getDescription(),
                 bike.getPrice(),
@@ -47,7 +47,7 @@ public class BikeMapper {
 
     public static Items itemsDtoToModel(ItemsDto item) {
         return new Items(
-                item.getId(),
+                null,
                 item.getModel(),
                 item.getType(),
                 item.getDescription(),

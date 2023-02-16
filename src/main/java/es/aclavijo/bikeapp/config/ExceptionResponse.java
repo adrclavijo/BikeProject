@@ -1,11 +1,9 @@
 package es.aclavijo.bikeapp.config;
 
 import static java.time.Instant.now;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.context.request.WebRequest;
 

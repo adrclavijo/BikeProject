@@ -30,5 +30,21 @@ public class BikeDataFactory {
 
     }
 
+    @Builder(builderMethodName = "itemsBuilder")
+    public static Items itemsModelBuilder(Integer id,
+                                          String model,
+                                          String type,
+                                          String description,
+                                          Bike bike) {
+        return new Items(
+                ofNullable(id).orElse(25),
+                ofNullable(model).orElse("model"),
+                ofNullable(type).orElse("type"),
+                ofNullable(description).orElse("description"),
+                bike
+        );
+
+    }
+
 
 }
